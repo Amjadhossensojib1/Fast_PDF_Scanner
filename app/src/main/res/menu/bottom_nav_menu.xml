@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_files"
+        android:icon="@drawable/ic_pdf_fils"
+        android:title="Files"/>
+
+    <!-- Center empty space for scan -->
+    <item
+        android:id="@+id/nav_empty"
+        android:enabled="false"
+        android:title=""
+        android:icon="@android:color/transparent"/>
+
+    <item
+        android:id="@+id/nav_tools"
+        android:icon="@drawable/ic_tools"
+        android:title="Tools"/>
+
+</menu>
