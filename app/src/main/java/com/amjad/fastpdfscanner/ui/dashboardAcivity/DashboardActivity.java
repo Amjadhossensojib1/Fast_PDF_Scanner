@@ -7,9 +7,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.amjad.fastpdfscanner.MyfilesFragment;
+import com.amjad.fastpdfscanner.ui.myfilesFragment.MyfilesFragment;
 import com.amjad.fastpdfscanner.R;
-import com.amjad.fastpdfscanner.ToolsFragment;
+import com.amjad.fastpdfscanner.ui.toolsFragment.ToolsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 

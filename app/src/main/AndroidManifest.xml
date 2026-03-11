@@ -9,7 +9,7 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:roundIcon="@id/img_logo"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.FastPDFScanner"
         tools:targetApi="31">
