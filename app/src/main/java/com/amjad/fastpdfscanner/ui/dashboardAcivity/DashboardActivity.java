@@ -1,12 +1,13 @@
 package com.amjad.fastpdfscanner.ui.dashboardAcivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.amjad.fastpdfscanner.ui.scannerActivity.ScannerActivity;
 import com.amjad.fastpdfscanner.ui.myfilesFragment.MyfilesFragment;
 import com.amjad.fastpdfscanner.R;
 import com.amjad.fastpdfscanner.ui.toolsFragment.ToolsFragment;
@@ -37,14 +38,11 @@ public class DashboardActivity extends AppCompatActivity implements BottomNaviga
 
         scanFab.setOnClickListener(v -> {
 
-            Toast.makeText(this,"Scan Button Clicked",Toast.LENGTH_SHORT).show();
-
-            // Scanner Activity open করতে পারো
-            // startActivity(new Intent(this, ScannerActivity.class));
+             //Scanner Activity open করতে
+             startActivity(new Intent(this, ScannerActivity.class));
 
         });
     }
-
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
@@ -61,7 +59,6 @@ public class DashboardActivity extends AppCompatActivity implements BottomNaviga
 
         return false;
     }
-
     private void loadFragment(Fragment fragment) {
         getSupportFragmentManager()
                 .beginTransaction()

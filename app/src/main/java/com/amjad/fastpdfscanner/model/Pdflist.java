@@ -1,37 +1,43 @@
 package com.amjad.fastpdfscanner.model;
 
 public class Pdflist {
-    private String  pdffileImage;
-    private String pdffileName;
-    private String pdffileSize;
 
-    public Pdflist(String pdffileImage, String pdffileName, String pdffileSize) {
-        this.pdffileImage = pdffileImage;
-        this.pdffileName = pdffileName;
-        this.pdffileSize = pdffileSize;
+    private String imageUrl;
+    private String title;
+    private String size;
+    private String path;
+    public Pdflist(String imageUrl, String title, String size, String path) {
+        this.imageUrl = imageUrl;
+        this.title = title;
+        this.size = size;
+        this.path = path;
     }
 
-    public String getPdffileImage() {
-        return pdffileImage;
+    public String getImageUrl() {
+        return imageUrl;
     }
 
-    public void setPdffileImage(String pdffileImage) {
-        this.pdffileImage = pdffileImage;
+    public String getTitle() {
+        return title;
     }
 
-    public String getPdffileName() {
-        return pdffileName;
+    public String getSize() {
+        return size;
     }
 
-    public void setPdffileName(String pdffileName) {
-        this.pdffileName = pdffileName;
+    public String getPath() {
+        return path;
     }
 
-    public String getPdffileSize() {
-        return pdffileSize;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public void setPdffileSize(String pdffileSize) {
-        this.pdffileSize = pdffileSize;
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
     }
 }
